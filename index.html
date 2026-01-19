@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR YOU</title>
+
+    <style>
+        /*Основные стили*/
+        body { background-color: #222; color: #ddd; font-family: sans-serif; margin: 0; padding: 0; overflow: hidden; }
+        .animated-background {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
+            background-image: url("https://media1.tenor.com/m/VmhuzV1X-nsAAAAC/-cyberpunk-anime.gif");
+            background-size: cover; background-repeat: no-repeat;
+        }
+        .header { text-align: center; padding: 20px; }
+        .profile { /*Стили профиля (границы, свечение, анимация)*/
+            border: 1px solid #555; margin: 20px auto; padding: 10px; width: 50%;
+            background-color: rgba(0, 0, 0, 0.5); box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+            border: 1px solid #0FF; box-shadow: 0 0 10px #0ff; transition: all 0.2s ease-in-out;
+        }
+        .profile:hover { transform: translateY(-5px) scale(1.03); box-shadow: 0 5px 15px #0ff, 0 0 20px #0ff; }
+        h2 { color: #ffb347; text-shadow: 1px 1px 2px #000; }
+
+        /*Стиль для текста внизу страницы (подсветка и позиционирование)*/
+        .footer-text {
+            position: fixed; /*Фиксированное положение внизу*/
+            bottom: 10px; /*Отступ от низа*/
+            left: 0; /*Выравнивание по левому краю*/
+            width: 100%; /*Занимает всю ширину*/
+            text-align: center; /*Центрирование текста*/
+            color: #fff; /*Белый цвет текста*/
+            text-shadow: 0 0 10px #fff; /*Белое свечение*/
+            font-size: 1.2em;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="animated-background"></div>
+    <div class="header"><h1>FOR YOU</h1></div>
+    <div class="profile"><h2>KNIGHT REAPER</h2><p>Парень что проживает жизнь за компьютером</p></div>
+    <div class="profile"><h2>VSOXZG</h2><p>Самая лучшая и милая девушка</p></div>
+
+    <div class="footer-text">ЗАПОМНИ ТЫ БЫЛА И БУДЕШЬ ЛУЧШЕ ВСЕХ</div>
+</body>
+</html>
